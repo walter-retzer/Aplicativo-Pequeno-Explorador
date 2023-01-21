@@ -11,6 +11,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
@@ -22,6 +24,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PequenoExploradorTheme {
+                // Navigation
+                val navController = rememberNavController()
+                SetupNavGraph(navController = navController)
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -32,6 +37,12 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+}
+
+
+@Composable
+fun SetupNavGraph(navController: NavController) {
+ //TODO:
 }
 
 @Composable
