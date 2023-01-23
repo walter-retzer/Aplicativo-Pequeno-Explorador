@@ -11,12 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
+import com.example.pequeno_explorador.navigation.SetupNavGraph
 import com.example.pequeno_explorador.ui.theme.PequenoExploradorTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,12 +37,6 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-}
-
-
-@Composable
-fun SetupNavGraph(navController: NavController) {
- //TODO:
 }
 
 @Composable
